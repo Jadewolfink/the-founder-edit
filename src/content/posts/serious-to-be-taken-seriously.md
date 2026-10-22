@@ -16,7 +16,13 @@ I used to make jewellery in college and give it all away. Twenty years later, sh
 
 That did something to me.
 
-And once I started looking, the signs were everywhere. Every time I travel, I buy jewellery. It’s small, it packs light. I gift it everywhere. People always ask where it’s from.
+## Where it started
+
+In 2004 I was studying in Australia. It was a really slow place. Things were expensive, and I didn't have much to do.
+
+Then my friend Kathleen took me to a bead shop at QV. We started going back again and again, buying beads, and I started making jewellery. It was just fun. I gave almost all of it away.
+
+And once I started looking, the signs were everywhere. Every time I travel, I buy jewellery. It's small, it packs light. I gift it everywhere. People always ask where it's from.
 
 And as a business? Almost unfair. Tiny. No warehouse. High margin.
 
@@ -24,15 +30,21 @@ And it never expires.
 
 But the real reason goes deeper.
 
+## My software uniform
+
 I spent ten years in software. And software is a very masculine world.
 
 For the best years of my life, I ran my wardrobe on the Steve Jobs method. The most basic pieces, the same every day, the least possible thinking. One less decision before work.
 
-Running a tech company made me so serious, so armoured, that people started assuming things about me that weren’t true. Somewhere in that decade, I misplaced a whole part of myself.
+Here's what that actually looked like. Five of the same spaghetti-strap tops from Uniqlo, in three colours each. Three pairs of jeans. Two pairs of the exact same sneakers, one in black and one in nude.
+
+That was my uniform. For years.
+
+Running a tech company made me so serious, so armoured, that people started assuming things about me that weren't true. Somewhere in that decade, I misplaced a whole part of myself.
 
 I thought that was the price of being taken seriously. I was wrong about that.
 
-The jewellery isn’t a pivot. It’s a recovery.
+The jewellery isn't a pivot. It's a recovery.
 
 I want to dress up again. I want to wear bold pieces. I want to be a little sassy.
 
@@ -42,25 +54,31 @@ At 40, something changed in me about permission.
 
 One good thing came out of downsizing: we got a dog in the office. I call her our HR officer. She makes everybody happy.
 
-She’s also my hiring filter. If you’re not open to my dog, you’re not my culture.
+She's also my hiring filter. If you're not open to my dog, you're not my culture.
 
-Because honestly, what is the point of starting a business if I can’t even have a dog at the office? I might as well work for someone else.
+Because honestly, what is the point of starting a business if I can't even have a dog at the office? I might as well work for someone else.
 
-That’s the energy ThousandGold was born from.
+That's the energy ThousandGold was born from.
 
-At 40, I didn’t want to wait to live my life. I wanted something physical. Something AI can’t replace. Something that keeps my team together even if the tech changes. And something that’s mine, done my way.
+At 40, I didn't want to wait to live my life. I wanted something physical. Something AI can't replace. Something that keeps my team together even if the tech changes. And something that's mine, done my way.
+
+## My first bazaar
 
 My first bazaar humbled me.
 
-I wasn’t planning to sell handmade pieces. Handmade doesn’t scale. But I didn’t have enough stock, so I made them frantically, by hand.
+I clearly underprepared. There just wasn't enough on my table. It looked bare.
+
+I wasn't planning to sell handmade pieces. Handmade doesn't scale. But I didn't have enough stock, so I started making them, frantically, by hand.
+
+Luckily, there's a bead shop near my office. Twenty years after QV, I was back in a bead shop, buying pearls and gemstones and making pieces with my own hands.
 
 They sold out.
 
-At one point, every piece I finished sold within half an hour. I couldn’t believe people wanted something I’d made with my own hands.
+At one point, every piece I finished sold within half an hour. I don't remember which piece sold first. But I remember every single piece I made. I couldn't believe people wanted something I'd made with my own hands.
 
 And still, the bazaar took everything out of my ego.
 
-At 41, a startup founder, I really thought I’d be driving a Tesla by now. Travelling the world.
+At 41, a startup founder, I really thought I'd be driving a Tesla by now. Travelling the world.
 
 Instead, I was pushing trolleys and closing curtains at a market stall.
 
@@ -68,7 +86,9 @@ The stall humbled me. The sold-out table healed me.
 
 Turns out you can get both at the same market.
 
-Here’s my favourite part.
+## Written in jade and gold
+
+Here's my favourite part.
 
 My family finally understands one of my businesses.
 
@@ -76,7 +96,11 @@ Ten years of software: polite, blank faces. One jewellery brand: suddenly everyo
 
 The brand is named for my sisters. Every piece I write a story for is a memory of my family, written down for the first time in my life.
 
-It’s an open diary. Written in gold.
+A lot of those stories are in jade. Our middle name is Yu, which means jade. So jade was always going to be ours.
+
+Many of the stories in the Qian collection come from my third sister. She's my closest sister, and my partner in crime. We're both single, so it's often just the two of us, and a lot of our stories ended up in the collection.
+
+It's an open diary. Written in gold.
 
 Would it still be worth doing if it never becomes huge?
 
@@ -84,7 +108,7 @@ Yes.
 
 Because even if nobody buys another piece, I finally wrote us down.
 
-*If you’re curious, the pieces live at [thousandgold.co](https://thousandgold.co).*
+*If you're curious, the pieces live at [thousandgold.co](https://thousandgold.co).*
 
 ---
 
