@@ -3,8 +3,11 @@
 Wen's personal blog. Astro static site; this GitHub repo (Jadewolfink/the-founder-edit) is the single source of truth.
 
 ## Publishing
-- Netlify project `the-founder-edit` (site id 987629ab-0ffb-44da-88eb-92be425f93d4) builds from the `main` branch automatically. To publish, commit to `main` and push. Do NOT deploy with the Netlify CLI from a local folder: that bypasses the repo and is how the original source files were lost.
+- Hosted on GitHub Pages. `.github/workflows/deploy.yml` builds and publishes on every push to `main`. To publish, commit to `main` and push. `public/CNAME` must stay `yuhwen.com`.
+- Never deploy from a local folder by any other route (e.g. the Netlify CLI): it bypasses the repo, which is how the original source files were lost. The old Netlify project `the-founder-edit` is retired.
 - Run `npm run build` before pushing and fix any errors; a failed build leaves the live site on the previous version.
+- The repo is PUBLIC: drafts committed here are readable by anyone.
+- Domain DNS is at GoDaddy (ns49/ns50.domaincontrol.com).
 
 ## Content
 - Posts: `src/content/posts/<slug>.md`. Frontmatter: title, description, date (YYYY-MM-DD), category (`entrepreneurship` | `wellbeing`), optional hero (`/images/heroes/<slug>.svg`), optional `draft: true`.

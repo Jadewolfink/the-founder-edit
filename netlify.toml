@@ -1,7 +1,0 @@
-# Netlify builds the site automatically every time a change lands on the `main` branch.
-[build]
-  command = "npm run build"
-  publish = "dist"
-
-[build.environment]
-  NODE_VERSION = "22"

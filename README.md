@@ -2,7 +2,9 @@
 
 Wen's personal blog, live at **[yuhwen.com](https://yuhwen.com)**.
 
-This repository is the master copy of the site. Netlify watches it: every change saved to the `main` branch is built and published to yuhwen.com automatically, usually within a minute. Nothing needs to be uploaded by hand.
+This repository is the master copy of the site, and it's also what publishes it. Every change saved to the `main` branch is built and published to yuhwen.com automatically by GitHub Pages, usually within a couple of minutes. Nothing needs to be uploaded by hand. Progress shows under the repository's **Actions** tab.
+
+This repository is public, so anything committed here, drafts included, can be read by anyone.
 
 ## Publishing a new post
 
@@ -22,7 +24,7 @@ This repository is the master copy of the site. Netlify watches it: every change
 
 3. Write the post below the header. Paragraphs are separated by a blank line, `*italics*`, `**bold**`, `[a link](https://…)`, `---` for a divider and `> ` for a quote.
 4. Put any header image in `public/images/heroes/`.
-5. Save the change to `main`. Netlify publishes it.
+5. Save the change to `main`. GitHub publishes it.
 
 Shortcut for a blank draft: `npm run new-post -- "My Post Title" wellbeing`
 
@@ -30,7 +32,7 @@ The homepage, category pages, Older/Newer links, reading time, RSS feed and site
 
 ## Drafts
 
-A post with `draft: true` shows up (tagged DRAFT) when previewing locally with `npm run dev`, but is never published to the live site. Delete the line when it's ready.
+A post with `draft: true` shows up (tagged DRAFT) when previewing locally with `npm run dev`, but is never published to the live site. Delete the line when it's ready. Because the repository is public, a draft's text is still readable on GitHub itself. Keep anything private somewhere else until it's ready.
 
 ## Other pages
 
@@ -50,4 +52,4 @@ npm run dev      # preview at http://localhost:4321
 npm run build    # produces the finished site in dist/
 ```
 
-Built with [Astro](https://astro.build). Hosted on Netlify (project `the-founder-edit`).
+Built with [Astro](https://astro.build). Hosted on GitHub Pages; the publishing steps are in `.github/workflows/deploy.yml`, and `public/CNAME` holds the domain. The domain is registered at GoDaddy.
