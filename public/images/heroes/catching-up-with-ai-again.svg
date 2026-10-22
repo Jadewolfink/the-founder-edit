@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+  <defs>
+    <linearGradient id="bg14" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#191418"/>
+      <stop offset="1" stop-color="#302631"/>
+    </linearGradient>
+    
+  <filter id="grain14">
+    <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.04 0"/>
+  </filter>
+  </defs>
+  <rect width="1600" height="700" fill="url(#bg14)"/>
+  <rect x="150" y="130" width="1300" height="440" rx="26" fill="#171219" stroke="#302631" stroke-width="2"/><circle cx="204" cy="174" r="8" fill="#c77e90" opacity="0.9"/><circle cx="232" cy="174" r="8" fill="#e8e1dc" opacity="0.5"/><circle cx="260" cy="174" r="8" fill="#302631"/><rect x="212" y="236" width="24" height="24" fill="#c77e90" opacity="0.85"/><rect x="252" y="240" width="320" height="16" rx="8" fill="#e8e1dc" opacity="0.3"/><rect x="212" y="290" width="24" height="24" fill="#c77e90" opacity="0.85"/><rect x="252" y="294" width="220" height="16" rx="8" fill="#e8e1dc" opacity="0.26"/><rect x="212" y="344" width="24" height="24" fill="#c77e90" opacity="0.85"/><rect x="252" y="348" width="380" height="16" rx="8" fill="#e8e1dc" opacity="0.21999999999999997"/><rect x="212" y="398" width="24" height="24" fill="#c77e90" opacity="0.85"/><rect x="252" y="402" width="170" height="16" rx="8" fill="#e8e1dc" opacity="0.18"/><rect x="212" y="452" width="28" height="28" fill="#c77e90"/><path d="M226 452 Q 240 362 300 324" fill="none" stroke="#e8e1dc" stroke-width="4.5" stroke-linecap="round"/><path d="M0 0 C 6 -12.8, 24 -15.2, 40 0 C 24 15.2, 6 12.8, 0 0"
+    fill="#e8e1dc" opacity="0.6" transform="translate(258 378) rotate(-35)"/><g fill="none" stroke="#c77e90" stroke-width="3.5" stroke-linecap="round"><path d="M312 292 C 298.8 274.84, 301.44 251.07999999999998, 312 248 C 322.56 251.07999999999998, 325.2 274.84, 312 292" transform="rotate(0 312 292)"/><path d="M312 292 C 298.8 274.84, 301.44 251.07999999999998, 312 248 C 322.56 251.07999999999998, 325.2 274.84, 312 292" transform="rotate(72 312 292)"/><path d="M312 292 C 298.8 274.84, 301.44 251.07999999999998, 312 248 C 322.56 251.07999999999998, 325.2 274.84, 312 292" transform="rotate(144 312 292)"/><path d="M312 292 C 298.8 274.84, 301.44 251.07999999999998, 312 248 C 322.56 251.07999999999998, 325.2 274.84, 312 292" transform="rotate(216 312 292)"/><path d="M312 292 C 298.8 274.84, 301.44 251.07999999999998, 312 248 C 322.56 251.07999999999998, 325.2 274.84, 312 292" transform="rotate(288 312 292)"/></g><circle cx="312" cy="292" r="3.96" fill="#e8e1dc"/>
+  <rect width="1600" height="700" filter="url(#grain14)"/>
+</svg>

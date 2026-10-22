@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Start Here | The Founder Edit" description="What The Founder Edit is, who writes it, and where to begin: Season 1 — The Things I Was Wrong About." current="start">
+  <section class="opener"><p class="kicker">Start here</p><h1>I ran the startup. Now I'm running the edit.</h1><p class="lede">I'm Wen — founder of SushiVid, accidental entrepreneur. For ten years I told the polished version of my story. This channel is the honest cut: what I believed, what actually happened, and what I only understood afterwards.</p><p class="lede">No frameworks. No five key takeaways. Just a founder going back over her own footage.</p></section><section class="season"><p class="kicker">Season one</p><h2>The Things I Was Wrong About</h2><p class="season-intro">Every episode is one assumption I carried into my founder life, and the moment it met reality. They're discoveries, not lessons — I'm still inside some of them.</p><ol class="episodes"><li><span class="ep-num" aria-hidden="true">01</span><div class="ep-text"><p class="ep-wrong">Wrong about: Success</p><h3>I thought life would reward the plan</h3><p class="ep-line">Beauty, marriage, career — I had the checklist. Life had other ideas.</p></div><span class="ep-status">Coming soon</span></li><li><span class="ep-num" aria-hidden="true">02</span><div class="ep-text"><p class="ep-wrong">Wrong about: Time</p><h3>I thought hard work ran on a schedule</h3><p class="ep-line">Work hard, raise the round, exit. Nobody told me the clock was a liar.</p></div><span class="ep-status">Coming soon</span></li><li><span class="ep-num" aria-hidden="true">03</span><div class="ep-text"><p class="ep-wrong">Wrong about: People</p><h3>The dream kept getting smaller</h3><p class="ep-line">I built SushiVid believing everyone was as hungry as me. They were not me.</p></div><span class="ep-status">Coming soon</span></li></ol></section><section class="meanwhile"><p class="kicker">While you wait</p><h2>The archive is already honest</h2><p>I've been writing since 2021 — through the health scare, the therapy, the year I fought to save the business. <a href="/">Start with the writing</a>, or read <a href="/my-startup-journey-and-its-negative-impact-on-my-health/">the post that started it all</a>.</p><p class="follow">Follow along on <a href="https://instagram.com/yuhwenfoong" rel="me noopener">Instagram</a> or subscribe by <a href="/rss.xml">RSS</a> — new episodes land here first as essays.</p></section>
+</Base>
+
+<style>
+.kicker{font-family:var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 .6rem;font-size:.75rem;font-weight:700}
+.opener{margin-bottom:4rem}
+.opener h1{text-wrap:balance;margin:0 0 1rem;font-size:clamp(1.7rem,4.5vw,2.1rem)}
+.lede{color:var(--ink-soft);max-width:34rem;margin:0 0 1em;font-size:.95rem}
+.season{margin-bottom:4rem}
+.season h2{margin:0 0 .75rem;font-size:1.4rem}
+.season-intro{color:var(--ink-soft);max-width:36rem;margin:0 0 2rem}
+.episodes{margin:0;padding:0;list-style:none}
+.episodes li{border-top:1px solid var(--line);align-items:baseline;gap:1.25rem;padding:1.4rem 0;display:flex}
+.episodes li:last-child{border-bottom:1px solid var(--line)}
+.ep-num{font-family:var(--display);color:var(--accent);font-variant-numeric:tabular-nums;flex-shrink:0;min-width:2.4rem;font-size:1.4rem;font-style:italic;font-weight:600}
+.ep-text{flex:1;min-width:0}
+.ep-wrong{font-family:var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 .25rem;font-size:.72rem;font-weight:700}
+.episodes h3{margin:0 0 .3rem;font-size:1.1rem}
+.ep-line{color:var(--ink-soft);max-width:34rem;margin:0;font-size:.95rem}
+.ep-status{font-family:var(--sans);letter-spacing:.04em;text-transform:uppercase;color:#7a4a1f;background:#f6d7a8;border-radius:999px;flex-shrink:0;padding:.15rem .65rem;font-size:.72rem;font-weight:700}
+.meanwhile h2{margin:0 0 .75rem;font-size:1.4rem}
+.meanwhile p{max-width:36rem}
+.follow{color:var(--ink-soft)}
+@media (width<=540px){.episodes li{flex-wrap:wrap;gap:.5rem 1rem}
+.ep-status{order:-1;margin-left:auto}
+}
+</style>

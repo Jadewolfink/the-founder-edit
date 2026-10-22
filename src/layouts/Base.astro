@@ -1,0 +1,87 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  /** Full browser-tab title. */
+  title: string;
+  description?: string;
+  /** Which nav link to highlight. */
+  current?: 'start' | 'writing' | 'about' | 'contact';
+}
+
+const DEFAULT_DESCRIPTION =
+  "The Founder Edit — Wen's notes on entrepreneurship, wellbeing, and figuring life out.";
+const { title, description = DEFAULT_DESCRIPTION, current } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yuhwen Foong",
+  "alternateName": "Wen",
+  "url": "https://yuhwen.com",
+  "jobTitle": "Founder & CEO",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "SushiVid",
+    "url": "https://sushivid.com"
+  },
+  "description": "Malaysian founder of SushiVid, Yù ThousandGold, and others. Writes The Founder Edit — honest essays on ten years of entrepreneurship.",
+  "sameAs": [
+    "https://instagram.com/yuhwenfoong",
+    "https://sushivid.com",
+    "https://thousandgold.co"
+  ]
+};
+
+const nav = [
+  { key: 'start', href: '/start-here', label: 'Start Here' },
+  { key: 'writing', href: '/', label: 'Writing' },
+  { key: 'about', href: '/about', label: 'About' },
+  { key: 'contact', href: '/contact', label: 'Contact' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="The Founder Edit" />
+    <link rel="canonical" href={canonical} />
+    <script type="application/ld+json" set:html={JSON.stringify(person)} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title="The Founder Edit" href="/rss.xml" />
+    <script is:inline>
+      // Light (white) is the brand default; dark is opt-in via the toggle.
+      document.documentElement.dataset.theme =
+        localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="The Founder Edit — home"><svg class="logo" viewBox="8 6 80 72" width="58" height="52" role="img" aria-hidden="true"><g class="logo-line" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M52 22 C 55 25.5, 57 29.5, 57.5 32.5 C 58.6 33.4, 58.7 34.6, 57.7 35.2 C 58.2 37.6, 57 40.2, 54.4 41.1 C 52.6 41.7, 51.4 41.4, 50.9 41.1 C 51.1 44, 51.6 46.4, 52.6 48.4"></path><path d="M52 22 C 47.5 17.8, 39 17.6, 35.4 23 C 32.3 27.8, 33.4 33.6, 36.6 37 C 37.8 38.4, 38.2 40.2, 37.8 42"></path><path d="M44 18.6 C 42.5 12.5, 34.5 12, 33.6 17.4 C 33 21.2, 38 22.6, 40.6 19.6"></path><path d="M37.8 42 C 36 46.8, 31.5 49.8, 25.5 51.2"></path><path d="M59 50.5 L 69.5 65.6"></path><path d="M60.8 55.2 C 62.4 53.6, 64.6 54.2, 65.4 56.4" stroke-width="2.4"></path><path d="M14 71 C 32 66, 52 73, 80 66.5"></path></g><circle class="logo-pin" cx="38.5" cy="16.8" r="2.2"></circle></svg></a>
+      <nav>
+        {nav.map((item) => (
+          <a href={item.href} aria-current={current === item.key ? 'page' : undefined}>{item.label}</a>
+        ))}
+        <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode"><svg class="sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4"></path></svg><svg class="moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg></button>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer"><p>© 2026 Yuhwen Foong</p><p><a href="https://instagram.com/yuhwenfoong" rel="me noopener">Instagram</a><span aria-hidden="true"> · </span><a href="/rss.xml">RSS</a></p></footer>
+    <script is:inline>
+      document.getElementById('theme-toggle').addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem('theme', next);
+      });
+    </script>
+  </body>
+</html>

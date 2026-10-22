@@ -1,0 +1,23 @@
+{
+  "name": "the-founder-edit",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Founder Edit — Wen's personal blog at yuhwen.com",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "new-post": "node scripts/new-post.mjs"
+  },
+  "dependencies": {
+    "@astrojs/rss": "4.0.19",
+    "@astrojs/sitemap": "3.7.4",
+    "@fontsource-variable/source-serif-4": "5.3.1",
+    "astro": "5.18.2",
+    "unist-util-visit": "5.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

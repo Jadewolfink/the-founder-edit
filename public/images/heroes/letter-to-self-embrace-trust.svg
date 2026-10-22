@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4a1f2b"/>
+      <stop offset="1" stop-color="#8a3548"/>
+    </linearGradient>
+    
+  <filter id="grain6">
+    <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.04 0"/>
+  </filter>
+  </defs>
+  <rect width="1600" height="700" fill="url(#bg6)"/>
+  <circle cx="800" cy="350" r="170" fill="none" stroke="#f2e7e0" stroke-width="5" opacity="0.9"/><circle cx="800" cy="350" r="146" fill="none" stroke="#f2e7e0" stroke-width="2" opacity="0.5" stroke-dasharray="2 10" stroke-linecap="round"/><g fill="none" stroke="#d9a15e" stroke-width="4.5" stroke-linecap="round"><path d="M800 364 C 777.8 335.14, 782.24 295.18, 800 290 C 817.76 295.18, 822.2 335.14, 800 364" transform="rotate(0 800 364)"/><path d="M800 364 C 777.8 335.14, 782.24 295.18, 800 290 C 817.76 295.18, 822.2 335.14, 800 364" transform="rotate(72 800 364)"/><path d="M800 364 C 777.8 335.14, 782.24 295.18, 800 290 C 817.76 295.18, 822.2 335.14, 800 364" transform="rotate(144 800 364)"/><path d="M800 364 C 777.8 335.14, 782.24 295.18, 800 290 C 817.76 295.18, 822.2 335.14, 800 364" transform="rotate(216 800 364)"/><path d="M800 364 C 777.8 335.14, 782.24 295.18, 800 290 C 817.76 295.18, 822.2 335.14, 800 364" transform="rotate(288 800 364)"/></g><circle cx="800" cy="364" r="6.66" fill="#f2e7e0"/><path d="M460 560 C 600 535, 1000 590, 1140 555" fill="none" stroke="#d9a15e" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+  <rect width="1600" height="700" filter="url(#grain6)"/>
+</svg>

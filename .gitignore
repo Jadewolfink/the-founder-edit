@@ -1,0 +1,17 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# local Netlify CLI state
+.netlify/
+
+# logs and environment
+npm-debug.log*
+.env
+.env.*
+
+# OS files
+.DS_Store

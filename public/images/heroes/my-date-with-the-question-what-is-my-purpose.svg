@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a2233"/>
+      <stop offset="1" stop-color="#7c4a63"/>
+    </linearGradient>
+    
+  <filter id="grain5">
+    <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.04 0"/>
+  </filter>
+  </defs>
+  <rect width="1600" height="700" fill="url(#bg5)"/>
+  <ellipse cx="800" cy="350" rx="500" ry="180" fill="none" stroke="#f1e5da" stroke-width="3" opacity="0.4" stroke-dasharray="1 14" stroke-linecap="round" transform="rotate(-16 800 350)"/><ellipse cx="800" cy="350" rx="370" ry="132" fill="none" stroke="#f1e5da" stroke-width="3" opacity="0.6000000000000001" stroke-dasharray="1 14" stroke-linecap="round" transform="rotate(18 800 350)"/><ellipse cx="370" cy="290" rx="24" ry="13.200000000000001" fill="#f1e5da" opacity="0.75" transform="rotate(-20 370 290)"/><ellipse cx="1180" cy="460" rx="20" ry="11" fill="#f1e5da" opacity="0.75" transform="rotate(30 1180 460)"/><ellipse cx="1050" cy="210" rx="18" ry="9.9" fill="#f1e5da" opacity="0.75" transform="rotate(60 1050 210)"/><ellipse cx="600" cy="500" rx="16" ry="8.8" fill="#f1e5da" opacity="0.75" transform="rotate(-40 600 500)"/><ellipse cx="1260" cy="310" rx="22" ry="12.100000000000001" fill="#d9a06e" opacity="0.95" transform="rotate(10 1260 310)"/><circle cx="800" cy="350" r="16" fill="#d9a06e"/>
+  <rect width="1600" height="700" filter="url(#grain5)"/>
+</svg>

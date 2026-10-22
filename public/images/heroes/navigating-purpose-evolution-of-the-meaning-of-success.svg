@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22372b"/>
+      <stop offset="1" stop-color="#4a6b52"/>
+    </linearGradient>
+    
+  <filter id="grain7">
+    <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.04 0"/>
+  </filter>
+  </defs>
+  <rect width="1600" height="700" fill="url(#bg7)"/>
+  <path d="M96 574 C 352 434, 416 630, 672 489.99999999999994 C 896.0000000000001 364, 927.9999999999999 574, 1152 385.00000000000006 C 1280 280, 1344 294, 1408 238.00000000000003" fill="none" stroke="#edebdf" stroke-width="5" stroke-linecap="round" opacity="0.9"/><path d="M0 0 C 8.4 -17.92, 33.6 -21.28, 56 0 C 33.6 21.28, 8.4 17.92, 0 0"
+    fill="#edebdf" opacity="0.5" transform="translate(384 518) rotate(-35)"/><path d="M0 0 C 8.4 -17.92, 33.6 -21.28, 56 0 C 33.6 21.28, 8.4 17.92, 0 0"
+    fill="#edebdf" opacity="0.45" transform="translate(720 476.00000000000006) rotate(15)"/><path d="M0 0 C 8.4 -17.92, 33.6 -21.28, 56 0 C 33.6 21.28, 8.4 17.92, 0 0"
+    fill="#edebdf" opacity="0.5" transform="translate(992 462) rotate(-25)"/><circle cx="672" cy="489.99999999999994" r="7" fill="#edebdf" opacity="0.8"/><circle cx="1152" cy="385.00000000000006" r="7" fill="#edebdf" opacity="0.8"/><g fill="none" stroke="#c99a4e" stroke-width="4" stroke-linecap="round"><path d="M1416 189 C 1400.4 168.72, 1403.52 140.64, 1416 137 C 1428.48 140.64, 1431.6 168.72, 1416 189" transform="rotate(0 1416 189)"/><path d="M1416 189 C 1400.4 168.72, 1403.52 140.64, 1416 137 C 1428.48 140.64, 1431.6 168.72, 1416 189" transform="rotate(72 1416 189)"/><path d="M1416 189 C 1400.4 168.72, 1403.52 140.64, 1416 137 C 1428.48 140.64, 1431.6 168.72, 1416 189" transform="rotate(144 1416 189)"/><path d="M1416 189 C 1400.4 168.72, 1403.52 140.64, 1416 137 C 1428.48 140.64, 1431.6 168.72, 1416 189" transform="rotate(216 1416 189)"/><path d="M1416 189 C 1400.4 168.72, 1403.52 140.64, 1416 137 C 1428.48 140.64, 1431.6 168.72, 1416 189" transform="rotate(288 1416 189)"/></g><circle cx="1416" cy="189" r="4.68" fill="#edebdf"/>
+  <rect width="1600" height="700" filter="url(#grain7)"/>
+</svg>

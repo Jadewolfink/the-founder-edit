@@ -1,0 +1,52 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { CATEGORIES } from '../../../content.config';
+import { getPosts, shortDateYear } from '../../../lib/posts';
+
+export function getStaticPaths() {
+  return Object.keys(CATEGORIES).map((category) => ({ params: { category } }));
+}
+
+const { category } = Astro.params as { category: keyof typeof CATEGORIES };
+const name = CATEGORIES[category];
+const posts = (await getPosts()).filter((p) => p.data.category === category);
+---
+
+<Base title={`${name} | The Founder Edit`}>
+  <h1 class="cat-title">{name}</h1>
+  <p class="meta">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</p>
+  <ul class="post-list">
+    {posts.map((p) => (
+      <li>
+        <a class="post-row" href={`/${p.id}/`}>
+          {p.data.hero && <img class="thumb" src={p.data.hero} alt="" loading="lazy" />}
+          <div class="post-text">
+            <span class="post-title">{p.data.title}</span>
+            <span class="post-excerpt">{p.data.description}</span>
+          </div>
+          <span class="post-date meta">{shortDateYear(p.data.date)}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</Base>
+
+<style>
+.cat-title{margin-bottom:.25rem;font-size:1.8rem}
+.post-list{margin:1.5rem 0 0;padding:0;list-style:none}
+.post-list li{border-bottom:1px solid var(--line)}
+.post-list li:last-child{border-bottom:none}
+.post-row{color:inherit;justify-content:space-between;align-items:baseline;gap:1.5rem;padding:1rem 0;display:flex}
+.post-row:hover{text-decoration:none}
+.post-row:hover .post-title{color:var(--accent)}
+.thumb{object-fit:cover;border-radius:8px;flex-shrink:0;align-self:center;width:96px;height:60px}
+.post-text{flex-direction:column;flex:1;gap:.2rem;min-width:0;display:flex}
+.post-title{font-family:var(--display);font-size:1.05rem;font-weight:600;line-height:1.3;transition:color .15s}
+.post-excerpt{color:var(--ink-soft);-webkit-line-clamp:1;-webkit-box-orient:vertical;font-size:.85rem;display:-webkit-box;overflow:hidden}
+.post-date{flex-shrink:0}
+@media (width<=540px){.post-row{flex-wrap:wrap;gap:.6rem}
+.thumb{width:72px;height:48px}
+.post-text{flex-basis:60%}
+.post-date{flex-basis:100%;margin-left:calc(72px + .6rem)}
+}
+</style>
